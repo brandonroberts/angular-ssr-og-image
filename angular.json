@@ -34,7 +34,14 @@
             "prerender": true,
             "ssr": {
               "entry": "server.ts"
-            }
+            },
+            "loader": {
+              ".node": "binary"
+            },
+            "allowedCommonJsDependencies": [
+              "@resvg/resvg-js",
+              "satori"
+            ]
           },
           "configurations": {
             "production": {
